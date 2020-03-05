@@ -6,11 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel='stylesheet' href='style.css'>
-</head>
+<link href="style.css" rel="stylesheet"></head>
 
 <body>
+  <div class="root">
+    <div class="app">
+      <header class="header content header__content">
+        <h1 class="header__title">School CI server</h1>
+        <button class="button header__button">
+          <img class='icon' src="images/gear.svg" alt="gear">
+          <span class="button__text">Settings</span>
+        </button>
+      </header>
+      <div class="settings-info content">
+        <img class="settings-info__img" src="images/settingslogo.svg" alt="key and screw">
+        <p class="settings-info__text">
+          Configure repository connection
+          and synchronization settings
+        </p>
+        <button class="button button_accent settings-info__button">
+          Open settings
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content footer__content">
+        <ul class="footer__link-list">
+          <li class="footer__link"><a href="#">Support</a></li>
+          <li class="footer__link"><a href="#">Learning</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; 2020 Andrey Pogorelov</p>
+      </div>
+    </footer>
+  </div>
   
-  <script src="bundle.js"></script>
-</body>
-
+<script type="text/javascript" src="bundle.js"></script></body>
+<script src="bundle.js"></script>
 </html>

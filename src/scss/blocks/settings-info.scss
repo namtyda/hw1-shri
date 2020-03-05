@@ -1,0 +1,26 @@
+.settings-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 124px;
+    height: 124px;
+  }
+
+  &__img {
+    margin-bottom: $vertical-indent-xl;
+  }
+
+  &__text {
+    @include secondary-text-style;
+    text-align: center;
+    max-width: 190px;
+    margin-top: 0;
+    margin-bottom: $vertical-indent-l;
+  }
+
+  &__button {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

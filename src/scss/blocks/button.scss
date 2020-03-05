@@ -1,0 +1,23 @@
+.button {
+  @include text-button;
+  padding: $default-desktop-horizontal-padding-button;
+  line-height: $default-text-button-lineHeight;
+  
+  border-radius: $default-border-radius;
+  border: none;
+  background-color: $default-button-background-color;
+  
+  &__text {
+    @include text-button;
+    line-height: $control-button-text-lineHeight;
+    padding-right: $control-button-left-padding;
+
+    @media screen and (max-width: 420px) {
+      display: none;
+    }
+  }
+
+  &_accent {
+    background-color: $accent-button-background-color;
+  }
+}
