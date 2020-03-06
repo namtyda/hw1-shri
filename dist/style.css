@@ -373,6 +373,17 @@ template {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
+.wrapper-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 824px; }
+
 .root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,7 +407,7 @@ template {
   font-size: 13px;
   color: #000;
   cursor: pointer;
-  padding: 20px;
+  padding: 0 20px;
   line-height: 36px;
   border-radius: 4px;
   border: none;
@@ -425,6 +436,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .header_settings {
+    margin-bottom: 18px; }
   .header__title {
     margin: 0;
     font-style: normal;
@@ -528,4 +541,141 @@ template {
   .settings-info__button {
     padding-top: 0;
     padding-bottom: 0; }
+
+.settings__form {
+  width: 100%; }
+
+.settings__title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 8px; }
+
+.settings__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  line-height: 18px;
+  color: #7F8285;
+  margin-top: 0;
+  margin-bottom: 22px; }
+
+.settings__field {
+  padding: 8px 13px;
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  line-height: 15px; }
+  .settings__field_time {
+    max-width: 20px;
+    padding-left: 15px;
+    margin: 0 8px;
+    border: 2px solid #D9D9D9;
+    border-radius: 4px; }
+    .settings__field_time:focus {
+      border: 2px solid #B3B3B3; }
+  .settings__field:focus {
+    outline: none; }
+  .settings__field::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 15px; }
+  .settings__field::-moz-placeholder {
+    font-size: 13px;
+    line-height: 15px; }
+  .settings__field:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px; }
+  .settings__field::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 15px; }
+  .settings__field::placeholder {
+    font-size: 13px;
+    line-height: 15px; }
+  .settings__field:not(:placeholder-shown) + .settings__field-cancel {
+    display: block; }
+
+.settings__field-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 474px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #D9D9D9;
+  border-radius: 4px; }
+  .settings__field-wrap:last-child {
+    margin-bottom: 20px; }
+  .settings__field-wrap:focus-within {
+    border: 2px solid #B3B3B3; }
+  .settings__field-wrap:not(:last-child) {
+    margin-bottom: 16px; }
+
+.settings__time-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px; }
+
+.settings__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: block;
+  line-height: 18px;
+  margin-bottom: 6px; }
+
+.settings__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (max-width: 420px) {
+    .settings__button-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; } }
+
+.settings__button {
+  margin-right: 8px; }
+  @media screen and (max-width: 420px) {
+    .settings__button {
+      margin-right: 0;
+      margin-bottom: 8px; } }
+
+.settings__require {
+  position: relative; }
+  .settings__require::after {
+    content: ' *';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FF3333; }
+
+.settings__field-cancel {
+  background-image: url(images/reset.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border: none;
+  background-color: transparent; }
 

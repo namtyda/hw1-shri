@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &_settings {
+    margin-bottom: $vertical-indent-xm;
+  }  
+
   &__title {
     margin: 0;
     font-style: $default-title-fontStyle;

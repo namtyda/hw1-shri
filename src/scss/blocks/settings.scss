@@ -1,0 +1,127 @@
+.settings {
+  &__form {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $text-fontSize-l;
+    line-height: $text-lineHeight-m;
+    margin-top: 0;
+    margin-bottom: $vertical-indent-xs;
+
+  }
+  
+  &__subtitle {
+    @include secondary-text-style;
+    line-height: $text-lineHeight-sm;
+    color: $secondary-text-color;
+    margin-top: 0;
+    margin-bottom: $vertical-indent-xxm;
+  }
+  
+  
+  &__field {
+    padding: $default-field-padding-vertical $default-field-padding;
+    border: none;
+    flex-grow: 1;
+    
+    @include secondary-text-style;
+    line-height: $text-lineHeight-s;
+    
+    &_time {
+      max-width: 20px;
+      padding-left: 15px;
+      margin: 0 8px;
+      border: 2px solid $default-field-color-border;
+      border-radius: $default-border-radius;
+
+      &:focus {
+        border: 2px solid $focus-field-color;
+      }
+    }
+
+    &:focus{
+     outline: none;
+    }
+    
+    &::placeholder {
+      font-size: $text-fontSize-m;
+      line-height: $text-lineHeight-s;
+    }
+
+    &:not(:placeholder-shown) + .settings__field-cancel {
+      display: block;
+    }
+  }
+  
+  &__field-wrap {
+    display: flex;
+    max-width: 474px;
+    align-items: center;
+    border: 2px solid $default-field-color-border;
+    border-radius: $default-border-radius;
+    
+    &:last-child {
+      margin-bottom: 20px;
+    }
+    &:focus-within {
+      border: 2px solid $focus-field-color;
+      
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $vertical-indent-m;
+    }
+  }
+
+  &__time-wrapper {
+    display: flex;
+    align-items: center;  
+    margin-bottom: $vertical-indent-l;
+  }
+
+  &__paragraph {
+    @include secondary-text-style;
+    display: block;
+    line-height: $text-lineHeight-sm;
+    margin-bottom: $field-margin-vertical;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 420px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__button {
+    margin-right: 8px;
+    @media screen and (max-width: 420px) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+  
+  &__require {
+    position: relative;
+    
+    &::after {
+      content: ' *';
+      @include secondary-text-style;
+      color: $sup-text-color;
+    }
+  }
+
+  &__field-cancel {
+    background-image: url('../images/icons/reset.svg');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+  }
+}

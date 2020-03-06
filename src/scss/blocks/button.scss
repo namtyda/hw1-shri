@@ -1,6 +1,6 @@
 .button {
   @include text-button;
-  padding: $default-desktop-horizontal-padding-button;
+  padding: 0 $default-desktop-horizontal-padding-button;
   line-height: $default-text-button-lineHeight;
   
   border-radius: $default-border-radius;

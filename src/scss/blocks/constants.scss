@@ -2,20 +2,33 @@
 $default-desktop-horizontal-padding-button: 20px;
 
 // indent vertical
+$vertical-indent-xs: 8px;
 $vertical-indent-s: 13px;
 $vertical-indent-m: 16px;
+$vertical-indent-xm: 18px;
+$vertical-indent-xxm: 22px;
 $vertical-indent-l: 24px;
 // $vertical-indent-xl: 13px;
 // $vertical-indent-xl: 13px;
 $vertical-indent-xl: 32px;
 // $vertical-indent-xl: 13px;
 
+// font-size common 
+$text-fontSize-s: 10px;
+$text-fontSize-m: 13px;
+$text-fontSize-l: 15px;
 
+// line-height common
+
+$text-lineHeight-s: 15px;
+$text-lineHeight-sm: 18px;
+$text-lineHeight-m: 20px;
+$text-lineHeight-l: 15px;
 
 //  button var
 $default-button-background-color: #E6E6E6;
 $accent-button-background-color: #FFCC00;
-$default-text-button-fontSize: 13px;
+$default-text-button-fontSize: $text-fontSize-m;
 $default-text-button-fontWeight: normal;
 $default-text-button-lineHeight: 36px;
 $default-text-button-fontStyle: normal;
@@ -42,5 +55,13 @@ $primary-text-color: #000;
 $secondary-text-color:#7F8285;
 $default-fontFamily: "YS Text";
 $hover-color-link:#E00000;
+$sup-text-color: #FF3333;
 // footer 
 $primary-background-color-footer: #F0F2F3;
+
+// field padding
+$default-field-padding: 13px;
+$default-field-padding-vertical: 8px;
+$default-field-color-border: #D9D9D9;
+$focus-field-color: #B3B3B3;
+$field-margin-vertical: 6px;
