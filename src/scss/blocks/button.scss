@@ -17,7 +17,23 @@
     }
   }
 
+  &:hover {
+    background-color: $default-button-hover-background-color;
+  }
+
+  &:focus {
+    outline: 2px solid #B3B3B3;
+  }
+
   &_accent {
     background-color: $accent-button-background-color;
+
+    &:hover {
+      background-color: $accent-hover-button-background-color;
+    }
+
+    &:focus {
+      outline: 2px solid #B38F00;
+    }
   }
 }

@@ -53,6 +53,10 @@ module.exports = {
       filename: 'settings.html',
       template: './src/settings.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'history.html',
+      template: './src/history.html'
+    }),
     new miniCss({
       filename: 'style.css',
     }),

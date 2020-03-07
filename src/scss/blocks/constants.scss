@@ -27,7 +27,11 @@ $text-lineHeight-l: 15px;
 
 //  button var
 $default-button-background-color: #E6E6E6;
+$default-button-hover-background-color: #DBDBDB;
+$default-button-focus-color:#B3B3B3;
 $accent-button-background-color: #FFCC00;
+$accent-hover-button-background-color: #F2C200;
+$accent-focus-button-color: #B38F00;
 $default-text-button-fontSize: $text-fontSize-m;
 $default-text-button-fontWeight: normal;
 $default-text-button-lineHeight: 36px;
@@ -56,6 +60,8 @@ $secondary-text-color:#7F8285;
 $default-fontFamily: "YS Text";
 $hover-color-link:#E00000;
 $sup-text-color: #FF3333;
+$good-pr-color: #00B341;
+$history-commit-color: #595959;
 // footer 
 $primary-background-color-footer: #F0F2F3;
 

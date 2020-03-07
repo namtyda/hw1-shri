@@ -423,8 +423,16 @@ template {
     @media screen and (max-width: 420px) {
       .button__text {
         display: none; } }
+  .button:hover {
+    background-color: #DBDBDB; }
+  .button:focus {
+    outline: 2px solid #B3B3B3; }
   .button_accent {
     background-color: #FFCC00; }
+    .button_accent:hover {
+      background-color: #F2C200; }
+    .button_accent:focus {
+      outline: 2px solid #B38F00; }
 
 .header {
   display: -webkit-box;
@@ -445,21 +453,32 @@ template {
     font-size: 24px;
     line-height: 28px;
     color: #7F8285; }
+    .header__title a {
+      color: #7F8285;
+      text-decoration: none; }
     @media screen and (max-width: 420px) {
       .header__title {
         font-size: 18px;
         line-height: 22px; } }
+    .header__title_history {
+      color: #000; }
   .header__button {
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     line-height: 28px; }
+    .header__button_history {
+      margin-left: 8px; }
   .header__content {
     margin-bottom: 215px; }
     @media screen and (max-width: 420px) {
       .header__content {
         margin-bottom: 109px; } }
+  .header__button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .icon {
   padding: 8px;
