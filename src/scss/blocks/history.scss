@@ -1,3 +1,10 @@
 .history {
-  
+  &__button {
+    margin-top: 8px;
+    padding: 0 13px;
+    
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+  }
 }

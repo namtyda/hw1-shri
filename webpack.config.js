@@ -57,6 +57,10 @@ module.exports = {
       filename: 'history.html',
       template: './src/history.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'detalis.html',
+      template: './src/detalis.html'
+    }),
     new miniCss({
       filename: 'style.css',
     }),

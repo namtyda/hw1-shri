@@ -1,18 +1,15 @@
 .card {
-  display: flex;
-  justify-content: space-between;
+  
   padding: 12px 24px;
   box-shadow: 0px 1px 1px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
   border-radius: 6px;
 
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width: 650px) {
     flex-direction: column;
   }
 
   &__discription {
     display: flex;
-    // flex-direction: column;
-    
   }
   
   &__state-wrapper {
@@ -23,7 +20,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    @media screen and (max-width: 530px) {
+    @media screen and (max-width: 650px) {
       flex-direction: column;
       align-items: flex-start;
     }
@@ -35,20 +32,44 @@
     font-weight: normal;
     line-height: 20px;
     margin: 0;
+
+    @media screen and (max-width: 650px) {
+      margin-top: 8px;
+    }
   }
 
   &__number-ticket {
     margin: 0 4px 0 0;
-    color: $good-pr-color;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+
+    @media screen and (max-width: 650px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    &_good {
+      color: $good-pr-color;
+    }
+
+    &_reject {
+      color: $reject-pr-color;
+    }
+
+    &_queue {
+      color: $queue-pr-color;
+    }
   }
 
   &__atributes {
     display: flex;
     font-size: 13px;
     line-height: 16px;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+      margin-bottom: 8px;
+    }
   }
 
   &__author-container {
@@ -59,6 +80,10 @@
   &__git-info {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__branch {
@@ -82,13 +107,18 @@
     font-size: 13px;
     line-height: 16px;
 
-    @media screen and (max-width: 530px) {
+    @media screen and (max-width: 650px) {
       flex-direction: row;
+      border-top: 1px solid  #F0F2F3;
     }
   }
 
   &__day {
     margin: 0;
+
+    @media screen and (max-width: 650px) {
+      margin-right: 10px;
+    }
   }
 
   &__time {
@@ -100,7 +130,7 @@
     align-items: center;
     margin: 0 0 12px 0;
 
-    @media screen and (max-width: 530px) {
+    @media screen and (max-width: 650px) {
       margin-bottom: 0;
     }
   }
@@ -112,8 +142,25 @@
 
   &__icon-pr {
     width: 21px;
-    height: 21px;
-    margin-right: 9px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 650px) {
+      width: 14px;
+      height: 14px;
+      background-size: 14px 14px;
+    }
+
+    &_good {
+      background-image: url('../images/icons/goodpr.svg');
+    }
+    &_reject {
+      background-image: url('../images/icons/reject.svg');
+    }
+
+    &_queue {
+      background-image: url('../images/icons/queue.svg');
+    }
   }
 
   &__icon-atribute {
@@ -122,5 +169,20 @@
 
   &:hover {
     box-shadow: 0px 2px 8px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
+    cursor: pointer;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+    }
   }
 }

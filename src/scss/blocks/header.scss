@@ -33,6 +33,11 @@
     }
   }
   
+  &__settings-title a {
+    &:hover {
+      color: #DBDBDB;
+    }
+  }
   &__button {
     padding: 0;
     display: flex;
