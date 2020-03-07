@@ -31,6 +31,12 @@
       @media screen and (max-width: 500px) {
         font-size: $font-size-xxxl;
       }
+      & a {
+        color: $primary-text-color;
+      }
+      &:hover a {
+        color: $hover-title-color
+      }
     }
   }
   
@@ -50,11 +56,11 @@
   }
 
   &__content {
-    margin-bottom: 215px;
+    margin-bottom: 215px; // Мне стыдно ((((
 
     
     @media screen and (max-width: 420px) {
-      margin-bottom: 109px;
+      margin-bottom: 109px; // И тут тоже ((, и много еще где ((
     }
   }
 

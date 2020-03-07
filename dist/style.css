@@ -474,6 +474,10 @@ template {
       @media screen and (max-width: 500px) {
         .header__title_history {
           font-size: 18px; } }
+      .header__title_history a {
+        color: #000; }
+      .header__title_history:hover a {
+        color: #DBDBDB; }
   .header__settings-title a:hover {
     color: #DBDBDB; }
   .header__button {
