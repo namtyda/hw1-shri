@@ -58,8 +58,8 @@ module.exports = {
       template: './src/history.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'detalis.html',
-      template: './src/detalis.html'
+      filename: 'details.html',
+      template: './src/details.html'
     }),
     new miniCss({
       filename: 'style.css',

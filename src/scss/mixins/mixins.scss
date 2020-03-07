@@ -1,7 +1,7 @@
 @mixin text-button {
-  font-style: $default-text-button-fontStyle;
-  font-weight: $default-text-button-fontWeight;
-  font-size: $default-text-button-fontSize;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size-l;
   color: $primary-text-color;
   cursor: pointer;
 }

@@ -1,6 +1,6 @@
 .card {
   
-  padding: 12px 24px;
+  padding: $space-xs $space-xxxl;
   box-shadow: 0px 1px 1px rgba(67, 68, 69, 0.3), 0px 0px 1px rgba(67, 68, 69, 0.3);
   border-radius: 6px;
 
@@ -19,7 +19,7 @@
   &__title-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: $space-xxxs;
     @media screen and (max-width: 650px) {
       flex-direction: column;
       align-items: flex-start;
@@ -27,26 +27,26 @@
   }
 
   &__title {
-    font-size: 15px;
+    font-size: $font-size-xl;
     font-style: normal;
     font-weight: normal;
-    line-height: 20px;
+    line-height: $line-height-l;
     margin: 0;
 
     @media screen and (max-width: 650px) {
-      margin-top: 8px;
+      margin-top: $space-xxxs;
     }
   }
 
   &__number-ticket {
     margin: 0 4px 0 0;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: $font-size-xxxl;
+    line-height: $line-height-l;
 
     @media screen and (max-width: 650px) {
-      font-size: 16px;
-      line-height: 16px;
+      font-size: $font-size-xxl;
+      line-height: $line-height-s;
     }
     &_good {
       color: $good-pr-color;
@@ -63,12 +63,12 @@
 
   &__atributes {
     display: flex;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: $font-size-l;
+    line-height: $line-height-s;
 
     @media screen and (max-width: 650px) {
       flex-direction: column;
-      margin-bottom: 8px;
+      margin-bottom: $space-xxxs;
     }
   }
 
@@ -82,7 +82,7 @@
     align-items: center;
 
     @media screen and (max-width: 650px) {
-      margin-bottom: 8px;
+      margin-bottom: $space-xxxs;
     }
   }
 
@@ -102,13 +102,11 @@
   &__date {
     display: flex;
     flex-direction: column;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
+    @include secondary-text-style;
 
     @media screen and (max-width: 650px) {
       flex-direction: row;
+      padding-top: $space-xxxs;
       border-top: 1px solid  #F0F2F3;
     }
   }
@@ -128,7 +126,7 @@
   &__day-container {
     display: flex;
     align-items: center;
-    margin: 0 0 12px 0;
+    margin: 0 0 $space-xs 0;
 
     @media screen and (max-width: 650px) {
       margin-bottom: 0;
@@ -142,7 +140,7 @@
 
   &__icon-pr {
     width: 21px;
-    margin-right: 10px;
+    margin-right: $space-xxs;
     background-repeat: no-repeat;
 
     @media screen and (max-width: 650px) {
@@ -173,7 +171,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: $space-xxxs;
   }
   
   &__information {

@@ -4,15 +4,15 @@
   align-items: center;
 
   &_settings {
-    margin-bottom: $vertical-indent-xm;
+    margin-bottom: $space-l;
   }  
 
   &__title {
     margin: 0;
-    font-style: $default-title-fontStyle;
+    font-style: normal;
     font-weight: $default-title-fontWeight;
-    font-size: $default-title-fontSize;
-    line-height: $default-lineHeight-title;
+    font-size: $font-size-xxxxl;
+    line-height: $line-height-xxl;
     color: $default-title-color;
     
     & a { 
@@ -20,28 +20,29 @@
       text-decoration: none;
     }
     @media screen and (max-width: 420px) {
-      font-size: $touch-title-fontSize;
-      line-height: $touch-title-lineHeight;
+      font-size: $font-size-xxxl;
+      line-height: $line-height-xl;
     }
     
     &_history {
       color: $primary-text-color;
       max-width: 350px;
+      line-height: $line-height-xxxl;
       @media screen and (max-width: 500px) {
-        font-size: $touch-title-fontSize;
+        font-size: $font-size-xxxl;
       }
     }
   }
   
   &__settings-title a {
     &:hover {
-      color: #DBDBDB;
+      color: $hover-title-color;
     }
   }
   &__button {
     padding: 0;
     display: flex;
-    line-height: $control-button-text-lineHeight;
+    line-height: $line-height-xxl;
     
     &_history {
       margin-left: 8px;
@@ -58,7 +59,7 @@
   }
 
   &__history-indent {
-    margin-bottom: $vertical-indent-xm;
+    margin-bottom: $space-l;
   }
 
   &__button-wrapper {

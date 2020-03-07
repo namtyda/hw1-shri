@@ -1,16 +1,15 @@
 .button {
   @include text-button;
-  padding: 0 $default-desktop-horizontal-padding-button;
-  line-height: $default-text-button-lineHeight;
-  
+  padding: 0 $space-xl;
+  line-height: $line-height-xxxxl;
   border-radius: $default-border-radius;
   border: none;
   background-color: $default-button-background-color;
   
   &__text {
     @include text-button;
-    line-height: $control-button-text-lineHeight;
-    padding-right: $control-button-left-padding;
+    line-height: $line-height-xxl;
+    padding-right: $font-size-l;
 
     @media screen and (max-width: 420px) {
       display: none;
@@ -22,7 +21,10 @@
   }
 
   &:focus {
-    outline: 2px solid #B3B3B3;
+    outline: none;
+    box-shadow:
+    0 0 0 2px $default-button-focus-color,
+    0 0 0 2px $default-button-focus-color;
   }
 
   &_accent {
@@ -33,7 +35,10 @@
     }
 
     &:focus {
-      outline: 2px solid #B38F00;
+      outline: none;
+      box-shadow:
+    0 0 0 2px $accent-focus-button-color,
+    0 0 0 2px $accent-focus-button-color;
     }
   }
 }
