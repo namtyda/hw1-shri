@@ -376,17 +376,6 @@ template {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.wrapper-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 824px; }
-
 .root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,7 +913,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 1px solid  #F0F2F3;
+  border-top: 1px solid #F0F2F3;
   padding-top: 8px; }
 
 .details__day-container {
@@ -939,7 +928,7 @@ template {
 .details__log {
   padding: 8px 12px;
   background-color: #f2f2f2;
-  font-family: 'Hack';
+  font-family: "Hack";
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

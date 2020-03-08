@@ -1,7 +1,7 @@
 .root {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 10px);
-  padding: 10px 0 0 0;
+  min-height: calc(100vh - #{$space-xxs});
+  padding: $space-xxs 0 0 0;
   font-family: $default-fontFamily;
 }
